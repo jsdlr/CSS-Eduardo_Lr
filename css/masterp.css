@@ -1,0 +1,410 @@
+*{
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+body{
+  background: #02010a;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  animation: AnimacionH 1s;
+}
+#menu0, #menu2{
+  text-decoration: none;
+}
+
+#galeria{
+  width: 900px;
+  margin: auto;
+}
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+	height: 400px;
+}
+.foota{
+  background-color: #C6d5c5;
+  height: 200px;
+}
+
+#i1{
+  filter: blur(10px);
+}
+#i2, #i4, #i6{
+  filter: grayscale(100%);
+}
+#i3{
+  filter: sepia(90%);
+}
+article[id^="img"]{
+  background-color: #d5c75f;
+}
+@-webkit-keyframes AnimacionH{
+  0%{
+    margin-top: 150px;
+  }
+  60%{
+    margin-top: -5px;
+  }
+  100%{
+    margin-top: 0px;
+  }
+}
+/*DESKTOP VERSION*/
+@media all and (min-width: 1024px) and (max-width: 1280px){
+  header{
+    width: 96%;
+    height: auto;
+    padding: 2%;
+  }
+  a[id^="menu"]{
+    color: white;
+    font-size: 1em;
+  }
+  #menu{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  #menu0{
+    font-size: 2.5em;
+    order: 1;
+    flex-grow: 30;
+  }
+  #menu1{
+    order: 2;
+    flex-grow: 1
+  }
+  #menu2{
+    order: 3;
+    flex-grow: 1
+  }
+  #menu3{
+    order: 4;
+    flex-grow: 1
+  }
+/**/
+  #galeria{
+    width: 900px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #img1{
+    order: 1;
+    width: 33.33%;
+    height: auto;
+    justify-content: center;
+  }
+  #img2{
+    order: 2;
+    width: 33.33%;
+    height: auto;
+    justify-content: center;
+  }
+  #img3{
+    order: 3;
+    width: 33.33%;
+    height: auto;
+    justify-content: center;
+  }
+  #img4{
+    order: 4;
+    width: 33.33%;
+    height: auto;
+    justify-content: center;
+  }
+  #img5{
+    order: 5;
+    width: 33.33%;
+    height: auto;
+    justify-content: center;
+  }
+  #img6{
+    order: 6;
+    width: 33.33%;
+    height: auto;
+    justify-content: center;
+  }
+  .img{
+    width: 80%;
+    height: auto;
+  }
+/**/
+  #pie{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  #contacto{
+    order: 1;
+    width: 25%;
+  }
+  #termino{
+    order: 2;
+    width: 25%;
+  }
+  #redes{
+    order: 3;
+    width: 25%;
+  }
+  #derechos{
+    order: 4;
+    width: 25%;
+  }
+  #redes img{
+    width: 50px;
+  }
+  #contacto{
+    border-radius: 0px 0px 0px 10px;
+  }
+  #derechos{
+    border-radius: 0px 0px 10px 0px;
+  }
+}
+
+/*TABLET VERSION*/
+@media all and (min-width: 480px) and (max-width: 1024px){
+  header{
+    width: 96%;
+    height: auto;
+    padding: 2%;
+  }
+  a[id^="menu"]{
+    color: white;
+    font-size: 1em;
+  }
+  #menu{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  #menu0{
+    font-size: 2em;
+    order: 1;
+    width: 70%;
+  }
+  #menu1{
+    order: 2;
+    width: 10%;
+  }
+  #menu2{
+    order: 3;
+    width: 10%;
+  }
+  #menu3{
+    order: 4;
+    width: 10%;
+  }
+  /**/
+    #galeria{
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    #img1{
+      order: 1;
+      width: 33.33%;
+      height: auto;
+      justify-content: center;
+    }
+    #img2{
+      order: 2;
+      width: 33.33%;
+      height: auto;
+      justify-content: center;
+    }
+    #img3{
+      order: 3;
+      width: 33.33%;
+      height: auto;
+      justify-content: center;
+    }
+    #img4{
+      order: 4;
+      width: 33.33%;
+      height: auto;
+      justify-content: center;
+    }
+    #img5{
+      order: 5;
+      width: 33.33%;
+      height: auto;
+      justify-content: center;
+    }
+    #img6{
+      order: 6;
+      width: 33.33%;
+      height: auto;
+      justify-content: center;
+    }
+    .img{
+      width: 80%;
+      height: auto;
+    }
+  /**/
+  #pie{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  #contacto{
+    order: 1;
+    width: 25%;
+    height: auto;
+  }
+  #termino{
+    order: 2;
+    width: 25%;
+    height: auto;
+  }
+  #redes{
+    order: 3;
+    width: 25%;
+    height: auto;
+  }
+  #derechos{
+    order: 4;
+    width: 25%;
+    height: auto;
+  }
+  #redes img{
+    width: 50px;
+  }
+  #contacto{
+    border-radius: 0px 0px 0px 10px;
+  }
+  #derechos{
+    border-radius: 0px 0px 10px 0px;
+  }
+}
+/*MOBILE VERSION*/
+@media all and (max-width: 480px) {
+  header{
+    width: 96%;
+    height: auto;
+    padding: 2%;
+  }
+
+  a[id^="menu"]{
+    color: white;
+  }
+
+  #menu{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #menu0{
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+  #menu1{
+    order: 2;
+    flex-grow: 1;
+    width: 33.33%;
+    text-align: center;
+  }
+
+  #menu2{
+    order: 3;
+    flex-grow: 1;
+    width: 33.33%;
+    text-align: center;
+  }
+
+  #menu3{
+    order: 4;
+    flex-grow: 1;
+    width: 33.33%;
+    text-align: center;
+  }
+  /**/
+    #galeria{
+      width: 100%;
+      display: flex;
+      flex-flow: column wrap;
+    }
+    #img1{
+      background-color: ;
+      order: 1;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+    }
+    #img2{
+      order: 2;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+    }
+    #img3{
+      order: 3;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+    }
+    #img4{
+      order: 4;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+    }
+    #img5{
+      order: 5;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+    }
+    #img6{
+      order: 6;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+    }
+    .img{
+      width: 80%;
+      height: auto;
+    }
+  /**/
+  #pie{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #contacto{
+    order: 1;
+    width: 100%;
+    height: auto;
+  }
+  #termino{
+    order: 2;
+    width: 100%;
+    height: auto;
+  }
+  #redes{
+    order: 3;
+    width: 100%;
+    height: auto;
+  }
+  #derechos{
+    order: 4;
+    width: 100%;
+    height: auto;
+  }
+  #redes img{
+    width: 50px;
+  }
+  #derechos{
+    border-radius: 0px 0px 10px 10px;
+  }
+}
