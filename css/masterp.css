@@ -62,7 +62,8 @@ article[id^="img"]{
 /*DESKTOP VERSION*/
 @media all and (min-width: 1024px) and (max-width: 1280px){
   header{
-    width: 96%;
+    width: 900px;
+    margin: auto;
     height: auto;
     padding: 2%;
   }
@@ -93,7 +94,8 @@ article[id^="img"]{
   }
 /**/
   #galeria{
-    width: 900px;
+    width: 950px;
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
   }
@@ -167,6 +169,10 @@ article[id^="img"]{
   }
   #derechos{
     border-radius: 0px 0px 10px 0px;
+  }
+  footer{
+  width: 950px;
+  margin: auto;
   }
 }
 
